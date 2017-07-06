@@ -62,14 +62,4 @@ public class StringUtils {
         return sb.toString();
     }
 
-
-
-    public static void main(String[] args) {
-        System.out.println(StringUtils.concat(null));
-
-        stringToStringBuilder(null);
-
-        System.out.println(clearWhitespace(" sss sss ss  "));
-
-    }
 }
