@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * @author ghaien on 2017/7/7.
  * @see Random
- * @see Integer
+ * @see Double
  */
 public class RandomUtil {
 
@@ -16,7 +16,7 @@ public class RandomUtil {
      * @param maxNum 最大值
      * @return 随机值
      */
-    public static Integer getRandomInt(Integer maxNum) {
+    public static int getRandomInt(int maxNum) {
         return getRandomInt(0, maxNum);
     }
 
