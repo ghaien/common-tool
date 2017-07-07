@@ -1,5 +1,7 @@
 package cn.ghaien;
 
+import java.util.UUID;
+
 /**
  * @author ghaien on 2017/7/6.
  * @see String
@@ -60,6 +62,16 @@ public class StringUtils {
                 sb.append(c);
         }
         return sb.toString();
+    }
+
+    /**
+     * 获取一个UUID的随机字符串 并将'-'字符切除
+     * @return 随机字符串
+     */
+    public static String getUUID() {
+        UUID uuid = UUID.randomUUID();
+        String result = uuid.toString();
+        return result.replaceAll("-", "");
     }
 
 }
